@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KullaniciArayuzActivty">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tmtparkarkaplan" />
+
+    <Button
+        android:id="@+id/OtoparkRandevubtnn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="79dp"
+        android:backgroundTint="#777373"
+        android:text="Randevu Oluştur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/randevulistbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KlncPrflButton" />
+
+    <Button
+        android:id="@+id/randevulistbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="77dp"
+        android:backgroundTint="#777373"
+        android:text="Randevularım"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/OtoparkRandevubtnn"
+        app:layout_constraintTop_toBottomOf="@+id/Uyelikbtn" />
+
+    <Button
+        android:id="@+id/KlncPrflButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#777373"
+        android:text="Profilim"
+        app:layout_constraintBottom_toTopOf="@+id/OtoparkRandevubtnn"
+        app:layout_constraintEnd_toStartOf="@+id/Uyelikbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Uyelikbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#777373"
+        android:text="Üyelik Satın Al"
+        app:layout_constraintBottom_toTopOf="@+id/randevulistbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/KlncPrflButton"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

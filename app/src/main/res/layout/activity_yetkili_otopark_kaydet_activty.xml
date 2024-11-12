@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context=".YetkiliOtoparkKaydetActivty">
+
+    <EditText
+        android:id="@+id/editTextOtoparkAdi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Otopark Adı Giriniz:"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOtoparkAdresi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editTextOtoparkKapasitesi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Otopark Kapasitesi Giriniz:"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOtoparkAdresi" />
+
+    <EditText
+        android:id="@+id/editTextOtoparkAdresi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Otopark Adresi Giriniz:"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOtoparkKapasitesi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOtoparkAdi" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="OTOPARK KAYDET"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOtoparkAdi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonKaydet"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginBottom="404dp"
+        android:backgroundTint="#333232"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextOtoparkKapasitesi"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOtoparkKapasitesi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
